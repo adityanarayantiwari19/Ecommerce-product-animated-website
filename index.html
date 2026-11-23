@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" />
+    <title>A. Lange & Söhne | DATOGRAPH Up/Down</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="globalCrystalCanvas" aria-hidden="true"></canvas>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#" aria-label="A. Lange and Sohne home">
+        <span class="brand-mark">A. Lange <i>&amp;</i> Söhne</span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#chronograph">Chronograph</a>
+        <a href="#craft">Craft</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" type="button" data-open-login aria-label="Open account">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-4 3-6 7-6s6.5 2 7 6"/></svg>
+        </button>
+        <button class="icon-button bag-button" type="button" data-open-bag aria-label="Open shopping bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1 12H5L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="bag-count">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="story" id="overview">
+        <div class="sticky">
+          <canvas id="crystalCanvas" aria-hidden="true"></canvas>
+          <canvas id="watchCanvas" aria-label="Animated exploded view of the Datograph"></canvas>
+          <div class="stage-glow"></div>
+
+          <article class="story-panel hero-panel" data-beat="hero">
+            <p class="eyebrow">A. Lange &amp; Sohne</p>
+            <h1>DATOGRAPH</h1>
+            <p class="hero-subtitle">Precision in motion.</p>
+            <p class="hero-copy">A contemporary chronograph shaped by German engineering.</p>
+          </article>
+
+          <article class="story-panel engineering-panel" data-beat="engineering">
+            <p class="eyebrow">Calibre L951.1</p>
+            <h2>Every component<br />has a purpose.</h2>
+            <p>Hundreds of precisely finished parts move as one: a hand-wound flyback chronograph engineered for exactitude and longevity.</p>
+          </article>
+
+          <article class="story-panel chronograph-panel" data-beat="chronograph">
+            <p class="eyebrow">Chronograph</p>
+            <h2>Time, measured<br />with instinct.</h2>
+            <ul>
+              <li>Flyback chronograph</li>
+              <li>Precise outsize date</li>
+              <li>58-hour power reserve</li>
+            </ul>
+          </article>
+
+          <article class="story-panel craft-panel" data-beat="craft">
+            <p class="eyebrow">Made in Glashutte</p>
+            <h2>Beauty is<br />in the mechanics.</h2>
+            <p>Hand-finished bridges, three-quarter plates and hand-engraved details reveal a craft measured in generations.</p>
+          </article>
+
+          <article class="story-panel final-panel" data-beat="final" id="discover">
+            <p class="eyebrow">DATOGRAPH UP/DOWN</p>
+            <h2>Make every<br />moment precise.</h2>
+            <p>German craft. Mechanical clarity. Timeless presence.</p>
+            <div class="cta-row">
+              <a class="primary-cta" href="#">Explore the Datograph</a>
+              <a class="text-cta" href="#">View specifications <span>↗</span></a>
+            </div>
+          </article>
+
+          <div class="progress" aria-hidden="true"><span></span></div>
+        </div>
+      </section>
+
+      <section class="details-section" id="engineering-details">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The DATOGRAPH Up/Down</p>
+          <h2>Mechanical.<br />Remarkably clear.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span>01</span>
+            <h3>L951.6 manufacture calibre</h3>
+            <p>A hand-wound column-wheel chronograph with a precisely jumping minute counter and flyback function.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>02</span>
+            <h3>Made for the moment</h3>
+            <p>The balance and escapement operate at 21,600 semi-oscillations per hour for assured mechanical precision.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>03</span>
+            <h3>58-hour power reserve</h3>
+            <p>An Up/Down indicator reveals the remaining energy, while a precisely engineered spring barrel delivers consistent torque.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="acquisition-section" id="discover">
+        <div class="acquisition-visual reveal">
+          <img src="1/ezgif-frame-235.jpg" alt="DATOGRAPH movement and chronograph components" />
+        </div>
+        <div class="acquisition-copy reveal">
+          <p class="eyebrow">Homage to an icon</p>
+          <h2>DATOGRAPH<br />Up/Down</h2>
+          <p class="watch-meta">Ref. 405.031 · 41.0 mm · Platinum</p>
+          <div class="price-row">
+            <div>
+              <span>Reference price</span>
+              <strong>€96,000</strong>
+            </div>
+            <span class="availability"><i></i> Private availability</span>
+          </div>
+          <div class="purchase-actions">
+            <button class="liquid-button" type="button" data-add-to-bag>
+              <span>Add to private bag</span>
+              <i></i>
+            </button>
+            <button class="secondary-button" type="button" data-open-login>Request a consultation</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="spec-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical details</p>
+          <h2>Defined by precision.</h2>
+        </div>
+        <dl class="spec-list reveal">
+          <div><dt>Case</dt><dd>41.0 mm, platinum</dd></div>
+          <div><dt>Movement</dt><dd>L951.6, manual winding</dd></div>
+          <div><dt>Reserve</dt><dd>Up to 58 hours</dd></div>
+          <div><dt>Functions</dt><dd>Flyback chronograph, outsize date</dd></div>
+          <div><dt>Dial</dt><dd>Solid silver, dial hour markers</dd></div>
+          <div><dt>Strap</dt><dd>Hand-stitched alligator leather</dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <aside class="bag-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <h2>Your bag</h2>
+        <button type="button" class="drawer-close" data-close-drawer aria-label="Close bag">×</button>
+      </div>
+      <div class="bag-product">
+        <img src="1/ezgif-frame-235.jpg" alt="" />
+        <div>
+          <h3>DATOGRAPH Up/Down</h3>
+          <p>Ref. 405.031 · Platinum</p>
+          <strong>€96,000</strong>
+        </div>
+      </div>
+      <div class="bag-empty">
+        <p>A considered acquisition begins with a private consultation.</p>
+      </div>
+      <button class="liquid-button checkout-button" type="button" data-open-checkout disabled>
+        <span>Proceed to checkout</span><i></i>
+      </button>
+    </aside>
+    <div class="overlay"></div>
+
+    <dialog class="modal account-modal">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <div class="modal-brand">A. Lange <i>&amp;</i> Söhne</div>
+      <h2>Welcome back.</h2>
+      <p>Access your collection, appointments and private orders.</p>
+      <form id="loginForm">
+        <label>Email address<input type="email" name="email" placeholder="name@example.com" required /></label>
+        <label>Password<input type="password" name="password" placeholder="••••••••" required /></label>
+        <button class="liquid-button" type="submit"><span>Continue</span><i></i></button>
+      </form>
+      <button class="modal-link" type="button">Create a private account</button>
+    </dialog>
+
+    <dialog class="modal checkout-modal">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <div class="checkout-layout">
+        <div class="checkout-main">
+          <p class="eyebrow">Private acquisition</p>
+          <h2>Checkout</h2>
+          <form id="checkoutForm">
+            <h3>Contact</h3>
+            <div class="field-grid">
+              <label>First name<input name="firstName" required /></label>
+              <label>Last name<input name="lastName" required /></label>
+            </div>
+            <label>Email address<input type="email" name="email" required /></label>
+            <h3>Delivery preference</h3>
+            <label>Preferred boutique
+              <select name="boutique" required>
+                <option>Paris — Rue Saint-Honoré</option>
+                <option>London — Bond Street</option>
+                <option>Dubai — Dubai Mall</option>
+                <option>New York — Fifth Avenue</option>
+              </select>
+            </label>
+            <label class="check-label"><input type="checkbox" required /> I agree to be contacted about this private order.</label>
+            <button class="liquid-button" type="submit"><span>Confirm request</span><i></i></button>
+          </form>
+        </div>
+        <aside class="order-summary">
+          <h3>Order summary</h3>
+          <div class="summary-product">
+            <img src="1/ezgif-frame-235.jpg" alt="" />
+            <div><strong>DATOGRAPH Up/Down</strong><span>Ref. 405.031</span></div>
+          </div>
+          <div class="summary-line"><span>Reference price</span><strong>€96,000</strong></div>
+          <div class="summary-line"><span>Secure delivery</span><strong>Included</strong></div>
+          <div class="summary-total"><span>Acquisition value</span><strong>€96,000</strong></div>
+        </aside>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
